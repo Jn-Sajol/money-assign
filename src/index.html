@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    '
+    <div class="p-10 w-full min-h-screen">
+      <h1 class="text-4xl font-bold text-primary text-center">
+        Money Master💰
+      </h1>
+
+      <div class="flex flex-col md:flex-row gap-8 md:max-w-6xl mx-auto mt-8">
+        <div class="w-full md:w-1/2">
+          <img src="./images//image.png" alt="image" class="w-full" />
+        </div>
+        <div class="w-full md:w-1/2 bg-gray-100 flex flex-col items-center">
+          <div class="p-8">
+            <h3 class="text-gray-800 text-lg font-bold text-center">Income</h3>
+
+            <div class="flex flex-col md:flex-row items-center gap-4 my-8">
+              <label for="income">Income:</label>
+              <input type="text" id="income" class="p-2 bg-gray-300" />
+            </div>
+            <h3 class="text-gray-800 text-lg font-bold text-center">
+              Expenses
+            </h3>
+
+            <div class="flex flex-col md:flex-row items-center gap-4 my-8">
+              <label for="food">Food:</label>
+              <input type="text" id="food" class="p-2 bg-gray-300" />
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-4 my-8">
+              <label for="rent">Rent:</label>
+              <input type="text" id="rent" class="p-2 bg-gray-300" />
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-4 my-8">
+              <label for="clothes">Clothes:</label>
+              <input type="text" id="clothes" class="p-2 bg-gray-300" />
+            </div>
+
+            <div class="text-center my-8">
+              <button onclick="calculate()" id="calculate" class="bg-blue-400 rounded px-4 py-2 text-white">
+                Calculate
+              </button>
+            </div>
+
+            <h3  class="text-gray-800 text-lg font-bold text-center">
+              Total Expenses: <span id="totalExpense">00</span>
+            </h3>
+            <h3  class="text-gray-800 text-lg font-bold text-center">
+              Balance: <spanc id="balance">00</span>
+            </h3>
+
+            <div class="flex flex-col md:flex-row items-center gap-4 my-8">
+              <label for="rent">Save:</label>
+              <input type="text" id="rent" class="p-2 bg-gray-300" />
+              <p>%</p>
+              <button class="bg-blue-400 rounded px-4 py-2 text-white">
+                Save
+              </button>
+            </div>
+
+            <h3 class="text-gray-800 text-lg font-bold text-center">
+              Saving Amount: 2000
+            </h3>
+            <h3 class="text-gray-800 text-lg font-bold text-center">
+              Remaining Balance: 2500
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
